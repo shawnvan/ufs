@@ -1,0 +1,4 @@
+UI
+
+http://speckyboy.com/2010/06/22/50-jquery-plugins-for-form-functionality-validation-security-and-customisation/
+http://widowmaker.kiev.ua/checkbox/   checkbox button UI

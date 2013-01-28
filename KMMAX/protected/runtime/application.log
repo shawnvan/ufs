@@ -1,0 +1,132 @@
+2012/11/15 13:33:16 [error] [system.db.CDbCommand] CDbCommand::fetchAll() failed: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'fSendFromName' in 'order clause'. The SQL statement executed was: SELECT * FROM `tbl_msgto` `t` WHERE fSendToUserNo = :fSendToUserNo ORDER BY fSendFromName LIMIT 5. Bound with :fSendToUserNo='1'.
+in E:\xampp\htdocs\UFS\security\protected\modules\msg\controllers\MsgtoController.php (85)
+in E:\xampp\htdocs\UFS\security\protected\modules\rights\components\RController.php (37)
+in E:\xampp\htdocs\UFS\security\index.php (16)
+2012/11/15 13:33:39 [error] [system.db.CDbCommand] CDbCommand::fetchAll() failed: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'omax.tbl_userprofile' doesn't exist. The SQL statement executed was: SHOW COLUMNS FROM `tbl_userprofile`.
+in E:\xampp\htdocs\UFS\security\protected\modules\users\models\UserProfile.php (25)
+in E:\xampp\htdocs\UFS\security\protected\modules\users\controllers\UserProfileController.php (27)
+in E:\xampp\htdocs\UFS\security\protected\modules\rights\components\RController.php (37)
+2012/11/16 13:41:49 [error] [system.db.CDbCommand] CDbCommand::execute() failed: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'id' in 'where clause'. The SQL statement executed was: UPDATE `tbl_wms_releaseorderheader` SET `fLocation`=:fLocation WHERE id=:id. Bound with :id=1, :fLocation='Tester'.
+in E:\xampp\htdocs\UFS\security\protected\modules\order\controllers\WmsWaveheaderController.php (312)
+in E:\xampp\htdocs\UFS\security\protected\modules\rights\components\RController.php (37)
+in E:\xampp\htdocs\UFS\security\index.php (16)
+2012/11/16 13:41:51 [error] [system.db.CDbCommand] CDbCommand::execute() failed: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'id' in 'where clause'. The SQL statement executed was: UPDATE `tbl_wms_releaseorderheader` SET `fLocation`=:fLocation WHERE id=:id. Bound with :id=1, :fLocation='Tester'.
+in E:\xampp\htdocs\UFS\security\protected\modules\order\controllers\WmsWaveheaderController.php (312)
+in E:\xampp\htdocs\UFS\security\protected\modules\rights\components\RController.php (37)
+in E:\xampp\htdocs\UFS\security\index.php (16)
+2012/11/16 13:45:14 [error] [system.db.CDbCommand] CDbCommand::execute() failed: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'id' in 'where clause'. The SQL statement executed was: UPDATE `tbl_wms_releaseorderheader` SET `fLocation`=:fLocation WHERE id=:id. Bound with :id=1, :fLocation='Tester'.
+in E:\xampp\htdocs\UFS\security\protected\modules\order\controllers\WmsWaveheaderController.php (312)
+in E:\xampp\htdocs\UFS\security\protected\modules\rights\components\RController.php (37)
+in E:\xampp\htdocs\UFS\security\index.php (16)
+2012/11/16 13:47:09 [error] [system.db.CDbCommand] CDbCommand::execute() failed: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'id' in 'where clause'. The SQL statement executed was: UPDATE `tbl_wms_releaseorderheader` SET `fLocation`=:fLocation WHERE id=:id. Bound with :id=1, :fLocation='Tester'.
+in E:\xampp\htdocs\UFS\security\protected\modules\order\controllers\WmsWaveheaderController.php (312)
+in E:\xampp\htdocs\UFS\security\protected\modules\rights\components\RController.php (37)
+in E:\xampp\htdocs\UFS\security\index.php (16)
+2012/11/16 13:47:15 [error] [system.db.CDbCommand] CDbCommand::execute() failed: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'id' in 'where clause'. The SQL statement executed was: UPDATE `tbl_wms_releaseorderheader` SET `fLocation`=:fLocation WHERE id=:id. Bound with :id=1, :fLocation='Tester'.
+in E:\xampp\htdocs\UFS\security\protected\modules\order\controllers\WmsWaveheaderController.php (312)
+in E:\xampp\htdocs\UFS\security\protected\modules\rights\components\RController.php (37)
+in E:\xampp\htdocs\UFS\security\index.php (16)
+2012/11/16 13:48:25 [error] [system.db.CDbCommand] CDbCommand::execute() failed: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'id' in 'where clause'. The SQL statement executed was: UPDATE `tbl_wms_releaseorderheader` SET `fLocation`=:fLocation WHERE id=:id. Bound with :id=1, :fLocation='Tester'.
+in E:\xampp\htdocs\UFS\security\protected\modules\order\controllers\WmsWaveheaderController.php (312)
+in E:\xampp\htdocs\UFS\security\protected\modules\rights\components\RController.php (37)
+in E:\xampp\htdocs\UFS\security\index.php (16)
+2012/11/16 13:49:11 [error] [system.db.CDbCommand] CDbCommand::execute() failed: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'id' in 'where clause'. The SQL statement executed was: UPDATE `tbl_wms_releaseorderheader` SET `fLocation`=:fLocation WHERE id=:id. Bound with :id=1, :fLocation='Tester'.
+in E:\xampp\htdocs\UFS\security\protected\modules\order\controllers\WmsWaveheaderController.php (312)
+in E:\xampp\htdocs\UFS\security\protected\modules\rights\components\RController.php (37)
+in E:\xampp\htdocs\UFS\security\index.php (16)
+2012/11/16 13:50:46 [error] [system.db.CDbCommand] CDbCommand::execute() failed: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'id' in 'where clause'. The SQL statement executed was: UPDATE `tbl_wms_releaseorderheader` SET `fLocation`=:fLocation WHERE id=:id. Bound with :id=1, :fLocation='Tester'.
+in E:\xampp\htdocs\UFS\security\protected\modules\order\controllers\WmsWaveheaderController.php (312)
+in E:\xampp\htdocs\UFS\security\protected\modules\rights\components\RController.php (37)
+in E:\xampp\htdocs\UFS\security\index.php (16)
+2012/11/16 14:18:16 [error] [system.db.CDbCommand] CDbCommand::execute() failed: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'id' in 'where clause'. The SQL statement executed was: UPDATE `tbl_wms_releaseorderheader` SET `fLocation`=:fLocation WHERE id=:id. Bound with :id=1, :fLocation='Tester'.
+in E:\xampp\htdocs\UFS\security\protected\modules\order\controllers\WmsWaveheaderController.php (312)
+in E:\xampp\htdocs\UFS\security\protected\modules\rights\components\RController.php (37)
+in E:\xampp\htdocs\UFS\security\index.php (16)
+2012/11/16 14:18:36 [error] [system.db.CDbCommand] CDbCommand::execute() failed: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'id' in 'where clause'. The SQL statement executed was: UPDATE `tbl_wms_releaseorderheader` SET `fLocation`=:fLocation WHERE id=:id. Bound with :id=1, :fLocation='Tester'.
+in E:\xampp\htdocs\UFS\security\protected\modules\order\controllers\WmsWaveheaderController.php (312)
+in E:\xampp\htdocs\UFS\security\protected\modules\rights\components\RController.php (37)
+in E:\xampp\htdocs\UFS\security\index.php (16)
+2012/11/16 14:18:39 [error] [system.db.CDbCommand] CDbCommand::execute() failed: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'id' in 'where clause'. The SQL statement executed was: UPDATE `tbl_wms_releaseorderheader` SET `fLocation`=:fLocation WHERE id=:id. Bound with :id=1, :fLocation='Tester'.
+in E:\xampp\htdocs\UFS\security\protected\modules\order\controllers\WmsWaveheaderController.php (312)
+in E:\xampp\htdocs\UFS\security\protected\modules\rights\components\RController.php (37)
+in E:\xampp\htdocs\UFS\security\index.php (16)
+2012/11/16 14:18:44 [error] [system.db.CDbCommand] CDbCommand::execute() failed: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'id' in 'where clause'. The SQL statement executed was: UPDATE `tbl_wms_releaseorderheader` SET `fLocation`=:fLocation WHERE id=:id. Bound with :id=1, :fLocation='Tester'.
+in E:\xampp\htdocs\UFS\security\protected\modules\order\controllers\WmsWaveheaderController.php (312)
+in E:\xampp\htdocs\UFS\security\protected\modules\rights\components\RController.php (37)
+in E:\xampp\htdocs\UFS\security\index.php (16)
+2012/11/16 14:20:24 [error] [system.db.CDbCommand] CDbCommand::execute() failed: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'id' in 'where clause'. The SQL statement executed was: UPDATE `tbl_wms_releaseorderheader` SET `fLocation`=:fLocation WHERE id=:id. Bound with :id=1, :fLocation='Tester'.
+in E:\xampp\htdocs\UFS\security\protected\modules\order\controllers\WmsWaveheaderController.php (312)
+in E:\xampp\htdocs\UFS\security\protected\modules\rights\components\RController.php (37)
+in E:\xampp\htdocs\UFS\security\index.php (16)
+2012/11/16 14:20:28 [error] [system.db.CDbCommand] CDbCommand::execute() failed: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'id' in 'where clause'. The SQL statement executed was: UPDATE `tbl_wms_releaseorderheader` SET `fLocation`=:fLocation WHERE id=:id. Bound with :id=1, :fLocation='Tester'.
+in E:\xampp\htdocs\UFS\security\protected\modules\order\controllers\WmsWaveheaderController.php (312)
+in E:\xampp\htdocs\UFS\security\protected\modules\rights\components\RController.php (37)
+in E:\xampp\htdocs\UFS\security\index.php (16)
+2012/11/16 14:21:11 [error] [system.db.CDbCommand] CDbCommand::execute() failed: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'id' in 'where clause'. The SQL statement executed was: UPDATE `tbl_wms_releaseorderheader` SET `fLocation`=:fLocation WHERE id=:id. Bound with :id=1, :fLocation='Tester'.
+in E:\xampp\htdocs\UFS\security\protected\modules\order\controllers\WmsWaveheaderController.php (312)
+in E:\xampp\htdocs\UFS\security\protected\modules\rights\components\RController.php (37)
+in E:\xampp\htdocs\UFS\security\index.php (16)
+2012/11/16 14:21:23 [error] [system.db.CDbCommand] CDbCommand::execute() failed: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'id' in 'where clause'. The SQL statement executed was: UPDATE `tbl_wms_releaseorderheader` SET `fLocation`=:fLocation WHERE id=:id. Bound with :id=1, :fLocation='Tester'.
+in E:\xampp\htdocs\UFS\security\protected\modules\order\controllers\WmsWaveheaderController.php (312)
+in E:\xampp\htdocs\UFS\security\protected\modules\rights\components\RController.php (37)
+in E:\xampp\htdocs\UFS\security\index.php (16)
+2012/11/16 14:21:27 [error] [system.db.CDbCommand] CDbCommand::execute() failed: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'id' in 'where clause'. The SQL statement executed was: UPDATE `tbl_wms_releaseorderheader` SET `fLocation`=:fLocation WHERE id=:id. Bound with :id=1, :fLocation='Tester'.
+in E:\xampp\htdocs\UFS\security\protected\modules\order\controllers\WmsWaveheaderController.php (312)
+in E:\xampp\htdocs\UFS\security\protected\modules\rights\components\RController.php (37)
+in E:\xampp\htdocs\UFS\security\index.php (16)
+2012/11/16 14:21:49 [error] [system.db.CDbCommand] CDbCommand::execute() failed: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'id' in 'where clause'. The SQL statement executed was: UPDATE `tbl_wms_releaseorderheader` SET `fLocation`=:fLocation WHERE id=:id. Bound with :id=1, :fLocation='Tester'.
+in E:\xampp\htdocs\UFS\security\protected\modules\order\controllers\WmsWaveheaderController.php (312)
+in E:\xampp\htdocs\UFS\security\protected\modules\rights\components\RController.php (37)
+in E:\xampp\htdocs\UFS\security\index.php (16)
+2012/11/16 14:21:52 [error] [system.db.CDbCommand] CDbCommand::execute() failed: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'id' in 'where clause'. The SQL statement executed was: UPDATE `tbl_wms_releaseorderheader` SET `fLocation`=:fLocation WHERE id=:id. Bound with :id=1, :fLocation='Tester'.
+in E:\xampp\htdocs\UFS\security\protected\modules\order\controllers\WmsWaveheaderController.php (312)
+in E:\xampp\htdocs\UFS\security\protected\modules\rights\components\RController.php (37)
+in E:\xampp\htdocs\UFS\security\index.php (16)
+2012/11/16 14:23:50 [error] [system.db.CDbCommand] CDbCommand::execute() failed: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'id' in 'where clause'. The SQL statement executed was: UPDATE `tbl_wms_releaseorderheader` SET `fLocation`=:fLocation WHERE id=:id. Bound with :id=1, :fLocation='Tester'.
+in E:\xampp\htdocs\UFS\security\protected\modules\order\controllers\WmsWaveheaderController.php (312)
+in E:\xampp\htdocs\UFS\security\protected\modules\rights\components\RController.php (37)
+in E:\xampp\htdocs\UFS\security\index.php (16)
+2012/11/16 14:26:17 [error] [system.db.CDbCommand] CDbCommand::execute() failed: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'id' in 'where clause'. The SQL statement executed was: UPDATE `tbl_wms_releaseorderheader` SET `fLocation`=:fLocation WHERE id=:id. Bound with :id=1, :fLocation='Tester'.
+in E:\xampp\htdocs\UFS\security\protected\modules\order\controllers\WmsWaveheaderController.php (312)
+in E:\xampp\htdocs\UFS\security\protected\modules\rights\components\RController.php (37)
+in E:\xampp\htdocs\UFS\security\index.php (16)
+2012/11/16 14:26:40 [error] [system.db.CDbCommand] CDbCommand::execute() failed: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'id' in 'where clause'. The SQL statement executed was: UPDATE `tbl_wms_releaseorderheader` SET `fLocation`=:fLocation WHERE id=:id. Bound with :id=1, :fLocation='Tester'.
+in E:\xampp\htdocs\UFS\security\protected\modules\order\controllers\WmsWaveheaderController.php (312)
+in E:\xampp\htdocs\UFS\security\protected\modules\rights\components\RController.php (37)
+in E:\xampp\htdocs\UFS\security\index.php (16)
+2012/11/16 14:27:20 [error] [system.db.CDbCommand] CDbCommand::execute() failed: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'id' in 'where clause'. The SQL statement executed was: UPDATE `tbl_wms_releaseorderheader` SET `fLocation`=:fLocation WHERE id=:id. Bound with :id=1, :fLocation='Tester'.
+in E:\xampp\htdocs\UFS\security\protected\modules\order\controllers\WmsWaveheaderController.php (312)
+in E:\xampp\htdocs\UFS\security\protected\modules\rights\components\RController.php (37)
+in E:\xampp\htdocs\UFS\security\index.php (16)
+2012/11/16 14:28:27 [error] [system.db.CDbCommand] CDbCommand::execute() failed: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'id' in 'where clause'. The SQL statement executed was: UPDATE `tbl_wms_releaseorderheader` SET `fLocation`=:fLocation WHERE id=:id. Bound with :id=1, :fLocation='Tester'.
+in E:\xampp\htdocs\UFS\security\protected\modules\order\controllers\WmsWaveheaderController.php (312)
+in E:\xampp\htdocs\UFS\security\protected\modules\rights\components\RController.php (37)
+in E:\xampp\htdocs\UFS\security\index.php (16)
+2012/11/16 14:28:34 [error] [system.db.CDbCommand] CDbCommand::execute() failed: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'id' in 'where clause'. The SQL statement executed was: UPDATE `tbl_wms_releaseorderheader` SET `fLocation`=:fLocation WHERE id=:id. Bound with :id=1, :fLocation='Tester'.
+in E:\xampp\htdocs\UFS\security\protected\modules\order\controllers\WmsWaveheaderController.php (312)
+in E:\xampp\htdocs\UFS\security\protected\modules\rights\components\RController.php (37)
+in E:\xampp\htdocs\UFS\security\index.php (16)
+2012/11/16 14:28:57 [error] [system.db.CDbCommand] CDbCommand::execute() failed: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'id' in 'where clause'. The SQL statement executed was: UPDATE `tbl_wms_releaseorderheader` SET `fLocation`=:fLocation WHERE id=:id. Bound with :id=1, :fLocation='Tester'.
+in E:\xampp\htdocs\UFS\security\protected\modules\order\controllers\WmsWaveheaderController.php (312)
+in E:\xampp\htdocs\UFS\security\protected\modules\rights\components\RController.php (37)
+in E:\xampp\htdocs\UFS\security\index.php (16)
+2012/11/16 14:29:14 [error] [system.db.CDbCommand] CDbCommand::execute() failed: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'id' in 'where clause'. The SQL statement executed was: UPDATE `tbl_wms_releaseorderheader` SET `fLocation`=:fLocation WHERE id=:id. Bound with :id=1, :fLocation='Tester'.
+in E:\xampp\htdocs\UFS\security\protected\modules\order\controllers\WmsWaveheaderController.php (312)
+in E:\xampp\htdocs\UFS\security\protected\modules\rights\components\RController.php (37)
+in E:\xampp\htdocs\UFS\security\index.php (16)
+2012/11/16 14:29:18 [error] [system.db.CDbCommand] CDbCommand::execute() failed: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'id' in 'where clause'. The SQL statement executed was: UPDATE `tbl_wms_releaseorderheader` SET `fLocation`=:fLocation WHERE id=:id. Bound with :id=1, :fLocation='Tester'.
+in E:\xampp\htdocs\UFS\security\protected\modules\order\controllers\WmsWaveheaderController.php (312)
+in E:\xampp\htdocs\UFS\security\protected\modules\rights\components\RController.php (37)
+in E:\xampp\htdocs\UFS\security\index.php (16)
+2012/11/16 14:29:39 [error] [system.db.CDbCommand] CDbCommand::execute() failed: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'id' in 'where clause'. The SQL statement executed was: UPDATE `tbl_wms_releaseorderheader` SET `fLocation`=:fLocation WHERE id=:id. Bound with :id=1, :fLocation='Tester'.
+in E:\xampp\htdocs\UFS\security\protected\modules\order\controllers\WmsWaveheaderController.php (312)
+in E:\xampp\htdocs\UFS\security\protected\modules\rights\components\RController.php (37)
+in E:\xampp\htdocs\UFS\security\index.php (16)
+2012/11/16 14:30:11 [error] [system.db.CDbCommand] CDbCommand::execute() failed: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'id' in 'where clause'. The SQL statement executed was: UPDATE `tbl_wms_releaseorderheader` SET `fLocation`=:fLocation WHERE id=:id. Bound with :id=1, :fLocation='Tester'.
+in E:\xampp\htdocs\UFS\security\protected\modules\order\controllers\WmsWaveheaderController.php (312)
+in E:\xampp\htdocs\UFS\security\protected\modules\rights\components\RController.php (37)
+in E:\xampp\htdocs\UFS\security\index.php (16)
+2012/11/16 15:05:59 [error] [system.db.CDbCommand] CDbCommand::execute() failed: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'fLocation' in 'field list'. The SQL statement executed was: INSERT INTO `tbl_wms_location` (`fLocation`) VALUES (:fLocation). Bound with :fLocation='新杰物流新杰物流'.
+in E:\xampp\htdocs\UFS\security\protected\modules\order\controllers\WmsWaveheaderController.php (318)
+in E:\xampp\htdocs\UFS\security\protected\modules\rights\components\RController.php (37)
+in E:\xampp\htdocs\UFS\security\index.php (16)

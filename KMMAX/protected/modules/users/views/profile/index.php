@@ -1,0 +1,186 @@
+<?php
+$this->breadcrumbs=array(
+	'Profiles',
+);
+Yii::app()->clientScript->registerScript('gethiddenpkey', "
+$('submenu .current').click(function(){
+	return false;
+});
+");
+?>
+
+<div class="content-head underline">
+	<h2>Profiles</h2>
+
+	<div class="content-action">
+
+	<?php        $this->widget ( 'zii.widgets.CMenu', array ('id'=>'',
+        		'htmlOptions'=>array('class'=>'submenu'),
+                'activeCssClass'=>'current',
+                'activateItems'=>true,
+                'activateParents'=>true,
+                'items' =>array(
+                		array('label'=>Yii::t('label','List Profile'), 'url'=>array('index'),'linkOptions'=>array('class'=>'current'),'visible'=>Yii::app()->user->checkAccess('users.profile.Index')),
+						array('label'=>Yii::t('label','Create Profile'), 'url'=>array('create'),'visible'=>Yii::app()->user->checkAccess('users.profile.Create')),					
+						array('label'=>Yii::t('label','Manage Profile'), 'url'=>array('admin'),'visible'=>Yii::app()->user->checkAccess('users.profile.Admin')),					
+                    ),
+                ));
+    ?>
+	</div>
+</div>
+<div class="content">
+
+<?php     $this->widget('application.modules.UFSBase.utils.WGrid',array(
+        'columns'=>array(
+            		array('title'=>CHtml::encode($sort->resolveLabel('fUserID'))),
+		array('title'=>CHtml::encode($sort->resolveLabel('fUserName'))),
+		array('title'=>CHtml::encode($sort->resolveLabel('fCity'))),
+		array('title'=>CHtml::encode($sort->resolveLabel('fWebsite'))),
+		array('title'=>CHtml::encode($sort->resolveLabel('fZipCode'))),
+		array('title'=>CHtml::encode($sort->resolveLabel('fCountry'))),
+		/*
+		array('title'=>CHtml::encode($sort->resolveLabel('fAssignedTo'))),
+		array('title'=>CHtml::encode($sort->resolveLabel('fQQ'))),
+		array('title'=>CHtml::encode($sort->resolveLabel('fLinkedIn'))),
+		array('title'=>CHtml::encode($sort->resolveLabel('fMSN'))),
+		array('title'=>CHtml::encode($sort->resolveLabel('fFullName'))),
+		array('title'=>CHtml::encode($sort->resolveLabel('fOfficePhone'))),
+		array('title'=>CHtml::encode($sort->resolveLabel('fCellPhone'))),
+		array('title'=>CHtml::encode($sort->resolveLabel('fHomePhone'))),
+		array('title'=>CHtml::encode($sort->resolveLabel('fNotes'))),
+		array('title'=>CHtml::encode($sort->resolveLabel('fAvatar'))),
+		array('title'=>CHtml::encode($sort->resolveLabel('fLanguage'))),
+		array('title'=>CHtml::encode($sort->resolveLabel('fTimeZone'))),
+		array('title'=>CHtml::encode($sort->resolveLabel('fShowSocialMedia'))),
+		array('title'=>CHtml::encode($sort->resolveLabel('fShowDetailView'))),
+		array('title'=>CHtml::encode($sort->resolveLabel('fShowWorkflow'))),
+		array('title'=>CHtml::encode($sort->resolveLabel('fGridviewSettings'))),
+		array('title'=>CHtml::encode($sort->resolveLabel('fFormSettings'))),
+		array('title'=>CHtml::encode($sort->resolveLabel('fEmailSignature'))),
+		array('title'=>CHtml::encode($sort->resolveLabel('fEnableFullWidth'))),
+		array('title'=>CHtml::encode($sort->resolveLabel('fSyncGoogleCalendarId'))),
+		array('title'=>CHtml::encode($sort->resolveLabel('fSyncGoogleCalendarAccessToken'))),
+		array('title'=>CHtml::encode($sort->resolveLabel('fSyncGoogleCalendarRefreshToken'))),
+		array('title'=>CHtml::encode($sort->resolveLabel('fGoogleId'))),
+		array('title'=>CHtml::encode($sort->resolveLabel('fUserCalendarsVisible'))),
+		array('title'=>CHtml::encode($sort->resolveLabel('fGroupCalendarsVisible'))),
+		array('title'=>CHtml::encode($sort->resolveLabel('fTagsShowAllUsers'))),
+		array('title'=>CHtml::encode($sort->resolveLabel('fWidgets'))),
+		array('title'=>CHtml::encode($sort->resolveLabel('fAllowPost'))),
+		array('title'=>CHtml::encode($sort->resolveLabel('fBackgroundColor'))),
+		array('title'=>CHtml::encode($sort->resolveLabel('fTagLine'))),
+		array('title'=>CHtml::encode($sort->resolveLabel('fCreateUser'))),
+		array('title'=>CHtml::encode($sort->resolveLabel('fCreateDate'))),
+		array('title'=>CHtml::encode($sort->resolveLabel('fUpdateUser'))),
+		array('title'=>CHtml::encode($sort->resolveLabel('fUpdateDate'))),
+		array('title'=>CHtml::encode($sort->resolveLabel('fEmailUserSignature'))),
+		array('title'=>CHtml::encode($sort->resolveLabel('fAddress1'))),
+		array('title'=>CHtml::encode($sort->resolveLabel('fAddress2'))),
+		*/
+        ),
+        'columnsModel'=>array(
+ 					array('name'=>'fUserID'),
+		array('name'=>'fUserName'),
+		array('name'=>'fCity'),
+		array('name'=>'fWebsite'),
+		array('name'=>'fZipCode'),
+		array('name'=>'fCountry'),
+		/*
+		array('name'=>'fAssignedTo'),
+		array('name'=>'fQQ'),
+		array('name'=>'fLinkedIn'),
+		array('name'=>'fMSN'),
+		array('name'=>'fFullName'),
+		array('name'=>'fOfficePhone'),
+		array('name'=>'fCellPhone'),
+		array('name'=>'fHomePhone'),
+		array('name'=>'fNotes'),
+		array('name'=>'fAvatar'),
+		array('name'=>'fLanguage'),
+		array('name'=>'fTimeZone'),
+		array('name'=>'fShowSocialMedia'),
+		array('name'=>'fShowDetailView'),
+		array('name'=>'fShowWorkflow'),
+		array('name'=>'fGridviewSettings'),
+		array('name'=>'fFormSettings'),
+		array('name'=>'fEmailSignature'),
+		array('name'=>'fEnableFullWidth'),
+		array('name'=>'fSyncGoogleCalendarId'),
+		array('name'=>'fSyncGoogleCalendarAccessToken'),
+		array('name'=>'fSyncGoogleCalendarRefreshToken'),
+		array('name'=>'fGoogleId'),
+		array('name'=>'fUserCalendarsVisible'),
+		array('name'=>'fGroupCalendarsVisible'),
+		array('name'=>'fTagsShowAllUsers'),
+		array('name'=>'fWidgets'),
+		array('name'=>'fAllowPost'),
+		array('name'=>'fBackgroundColor'),
+		array('name'=>'fTagLine'),
+		array('name'=>'fCreateUser'),
+		array('name'=>'fCreateDate'),
+		array('name'=>'fUpdateUser'),
+		array('name'=>'fUpdateDate'),
+		array('name'=>'fEmailUserSignature'),
+		array('name'=>'fAddress1'),
+		array('name'=>'fAddress2'),
+		*/
+		 		
+        ),
+        'pages'=>$pages,
+        'rowNum'=>'5',
+        'rownumbers'=>'true',
+        'rows'=>$gridRows,
+        'sColumns'=>array(
+            		array('title'=>$sort->link('fUserID')),
+		array('title'=>$sort->link('fUserName')),
+		array('title'=>$sort->link('fCity')),
+		array('title'=>$sort->link('fWebsite')),
+		array('title'=>$sort->link('fZipCode')),
+		array('title'=>$sort->link('fCountry')),
+		/*
+		array('title'=>$sort->link('fAssignedTo')),
+		array('title'=>$sort->link('fQQ')),
+		array('title'=>$sort->link('fLinkedIn')),
+		array('title'=>$sort->link('fMSN')),
+		array('title'=>$sort->link('fFullName')),
+		array('title'=>$sort->link('fOfficePhone')),
+		array('title'=>$sort->link('fCellPhone')),
+		array('title'=>$sort->link('fHomePhone')),
+		array('title'=>$sort->link('fNotes')),
+		array('title'=>$sort->link('fAvatar')),
+		array('title'=>$sort->link('fLanguage')),
+		array('title'=>$sort->link('fTimeZone')),
+		array('title'=>$sort->link('fShowSocialMedia')),
+		array('title'=>$sort->link('fShowDetailView')),
+		array('title'=>$sort->link('fShowWorkflow')),
+		array('title'=>$sort->link('fGridviewSettings')),
+		array('title'=>$sort->link('fFormSettings')),
+		array('title'=>$sort->link('fEmailSignature')),
+		array('title'=>$sort->link('fEnableFullWidth')),
+		array('title'=>$sort->link('fSyncGoogleCalendarId')),
+		array('title'=>$sort->link('fSyncGoogleCalendarAccessToken')),
+		array('title'=>$sort->link('fSyncGoogleCalendarRefreshToken')),
+		array('title'=>$sort->link('fGoogleId')),
+		array('title'=>$sort->link('fUserCalendarsVisible')),
+		array('title'=>$sort->link('fGroupCalendarsVisible')),
+		array('title'=>$sort->link('fTagsShowAllUsers')),
+		array('title'=>$sort->link('fWidgets')),
+		array('title'=>$sort->link('fAllowPost')),
+		array('title'=>$sort->link('fBackgroundColor')),
+		array('title'=>$sort->link('fTagLine')),
+		array('title'=>$sort->link('fCreateUser')),
+		array('title'=>$sort->link('fCreateDate')),
+		array('title'=>$sort->link('fUpdateUser')),
+		array('title'=>$sort->link('fUpdateDate')),
+		array('title'=>$sort->link('fEmailUserSignature')),
+		array('title'=>$sort->link('fAddress1')),
+		array('title'=>$sort->link('fAddress2')),
+		*/
+	
+        ),
+       'sortname'=>'fUserID',
+        'sortorder'=>'asc',
+        'url'=>Yii::app()->createUrl('users/profile/gridData',$_GET),
+        'modulename'=>'Profile',
+    )); ?>
+</div>

@@ -1,0 +1,6 @@
+1.rights  user
+权限和用户表必须有一个默认用户和默认的角色名 
+rights -> admin
+user -> fUserID  fUserName
+2.rights模块的RAuthorizer文件getSuperusers方法有错误，修改第300行
+3.user表的fFristName 改成 fFirstName
